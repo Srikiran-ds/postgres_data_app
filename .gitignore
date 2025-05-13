@@ -1,14 +1,1 @@
-[connections.gsheets]
-spreadsheet = "xx"
 
-type= "service_account"
-project_id= "dataapp-459619"
-private_key_id= "4b0ab42625f1c653026ce83766d7a607d4b15ec1"
-private_key= "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDPjnMFDDp1Ukt6\niwJ9QirUYa5baVB00TyQPXQ16r0uf+qf1w3/OMuttuymKB5pDZ2t66n0k1rppj/D\nEzPPi9SqiG8th/MzNnMLw/pRDpirbVdFL2QD1bThDz0B77+ZI0ZSa45NF+Rf67xS\nNpo+xYlkyaqv1nTAUvzP9PsyCZ8hyYtCfgrmOmyR/sWXxKiXUbbdQDrmMeO3beFL\npylrboulMj0prjNUz4R4HRVI4a6K70Uruif4IQIOgYWhaFTWRVNmF6QRwzDrFjUe\ncjR0x39Z+Qbc+rnHy7BUX0AK8Uu9YWDBSSbwqzjAVelkpp/uZiRyMzq//KL23rai\nHuvzLsPNAgMBAAECggEAArB+PdlNg9B2X4O5m1UZW1/z2gXG7LYuKlHn7y+34whc\nfYghC4Bfs0Qkunc+naHdiMlkjfsmBgaip0ZybDgMBptDklV2o0bYJGJ8gqkrwhAZ\nCpgPAoKCy3/FDJqTFjFM0fiVNkG4mQpjvRtg0eHOLye/aUCs8DXWRmOOqOe5aVik\nznUgxuRzyBiyxArnDeIZ/P9d3ZOnZK4HmrRkxzBuo0vjBXMrWRLeFkNtSctEjmk4\nz1Kjl8VIK3J3hEKnxquTbo+PZQe5A+sGgAfojS5/cYQjKgSD8pykLkIeFRl2H13j\nME/fdjaFYVzJVg5hC2VMTe9N6tKrB8N8gFvYPIbowQKBgQD/6dPYqfikKTNwzaYE\nYxSYXn0n6qZB5tSYiv47HPWIzjhGXhLlsmcKAxwT6fMMmP7P8juXaMbycxqQUG48\n2VEahzwo2cX4u+WDzlwVzTcTcj9v48+wbWPCVAvshcxW52ppoyy0KMZxz9dpZqBu\nO+Iach2Gi+pBOd29bXpbRtZVRQKBgQDPoG6eCAkGlf07948tbtsffYJsDQ3upZqG\nZA1KzLicbNMpKIT+8LkKVa2TZE+3vz2BPUcuha66ndz18PCtWpoddO04enS0X6cZ\nyC+CDInXlSFy3zfzESeKP4rQFA2tUinODxRv+0SF2/HPFSQ/36GsLQ9biSX17TPH\nsTjx/j0I6QKBgENp5VR98fHMqLBefA1LzHEW8wFA3usdU4Obmb0Ys9WF/W0L+w5n\nIJ2SlCLqzgvTgcxlky0ffMkBaU364g9FcAf89+wK8gvD84H1KmzT0l5dCjj/Wgav\nyke2vC1iUaHS9EU/ptcOprf0eFpbnodrXvR4ey6mTN9BzxfHbyP8VRnBAoGAXi/n\nPmViwswT3rpFB1U8riJfoeiiI1qYqNKGfSI1tTBg8lDhVE2bg6auYSimSTLGEfTc\nb6xRQXMPo7ozVFC/jRFX88EJZDHoOffoJVTOyy9pxxSf6vIjP8HnlNEkCzY0pLeO\ni+YuhZLrNQfgM+GdE+A1EU88Gz4JuVMaBB1TTtECgYEAoAvPmeB3ZqIfGLPKkkOa\n/yYT4vbqbApoHYYXoGkni1/XhDNQgWB2PtG9tgn+FmgpJsABgSQt+DonB55HPIlL\ne5D7yUCpo4yJ71bY2D2gKgp9qFl2sYpcVb64XiBZERqlLxi9SujFjz/P1oh9VUib\nZVhTr5sym63fRt6W40lhxRc=\n-----END PRIVATE KEY-----\n"
-client_email= "service-acc@dataapp-459619.iam.gserviceaccount.com"
-client_id= "113496758874258294611"
-auth_uri= "https://accounts.google.com/o/oauth2/auth"
-token_uri= "https://oauth2.googleapis.com/token"
-auth_provider_x509_cert_url= "https://www.googleapis.com/oauth2/v1/certs"
-client_x509_cert_url= "https://www.googleapis.com/robot/v1/metadata/x509/service-acc%40dataapp-459619.iam.gserviceaccount.com"
-universe_domain= "googleapis.com"
