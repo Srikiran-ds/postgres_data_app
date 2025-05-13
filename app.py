@@ -5,6 +5,7 @@ import pandas as pd
 # Create a connection object.
 conn = st.connection("gsheets", type=GSheetsConnection)
 tab1, tab2, tab3 = st.tabs(["Update", "Read", "Analysis"])
+conn = tab2.connection("gsheets", type=GSheetsConnection)
 tab2.write("connection success")
 df = conn.read(worksheet="sample", ttl="0.5m")
 tab2.write(df)
