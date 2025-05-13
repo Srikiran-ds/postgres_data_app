@@ -8,9 +8,9 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 tab1, tab2, tab3 = st.tabs(["Update", "Read", "Analysis"])
 #conn = tab2.connection("gsheets", type=GSheetsConnection)
 tab2.write("connection success")
-df = conn.read(worksheet="sample", ttl="0.5m")
+df = conn.read(spreadsheet="sample", ttl="0.5m")
 if tab2.button("refresh"):
-    df = conn.read(worksheet="sample", ttl="0.5m")
+    df = conn.read(spreadsheet="sample", ttl="0.5m")
 tab2.write(df)
 
 # Add the new vendor data to the existing data
@@ -28,6 +28,8 @@ if submit_button:
     updated_df = pd.concat([df, new_data], ignore_index=True)
 
     # Update Google Sheets with the new vendor data
+tab3.write("Mean of ages")
+m=conn.query(
     conn.update(worksheet="sample", data=updated_df)
     st.success("Vendor details successfully submitted!")
     #df = conn.read(worksheet="sample", ttl="0.5m")
