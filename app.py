@@ -8,9 +8,9 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 tab1, tab2, tab3 = st.tabs(["Update", "Read", "Analysis"])
 #conn = tab2.connection("gsheets", type=GSheetsConnection)
 tab2.write("connection success")
-df = conn.read(spreadsheet="sample", ttl="0.5m")
+df = conn.read(worksheet="sample", ttl="0.5m")
 if tab2.button("refresh"):
-    df = conn.read(spreadsheet="sample", ttl="0.5m")
+    df = conn.read(worksheet="sample", ttl="0.5m")
 tab2.write(df)
 
 # Add the new vendor data to the existing data
