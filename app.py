@@ -4,10 +4,10 @@ import pandas as pd
 
 # Create a connection object.
 conn = st.connection("gsheets", type=GSheetsConnection)
-st.write("connection success or what")
-
-df = conn.read(worksheet="sample", ttl="10m")
+st.write("connection success")
+df = conn.read(worksheet="sample", ttl="0.5m")
 st.write(df)
+
 # Add the new vendor data to the existing data
 name = st.text_input(label="Name")
 age = st.text_input(label="age")
@@ -24,3 +24,6 @@ if submit_button:
 
     # Update Google Sheets with the new vendor data
     conn.update(worksheet="sample", data=updated_df)
+    st.success("Vendor details successfully submitted!")
+    df = conn.read(worksheet="sample", ttl="0.5m")
+    st.write(df)
