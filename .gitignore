@@ -1,5 +1,5 @@
 [connections.gsheets]
-spreadsheet = "https://docs.google.com/spreadsheets/d/15Lgrce1z8PSZfriC-zLsV6QQUycwPuaj2D0O47Slc-I/edit?gid=108807730#gid=108807730"
+spreadsheet = "xx"
 
 type= "service_account"
 project_id= "dataapp-459619"
