@@ -14,8 +14,8 @@ if tab2.button("refresh"):
 tab2.write(df)
 
 # Add the new vendor data to the existing data
-name = tab1.text_input(label="Name")
-age = tab1.number_input(label="age",min=0)
+name = tab1.text_input(label="Name",value=None)
+age = tab1.number_input(label="age",min_value=0,value=None)
 submit_button = tab1.button(label="Submit Details")
 if submit_button:
     new_data = pd.DataFrame(
