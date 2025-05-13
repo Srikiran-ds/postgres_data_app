@@ -33,5 +33,5 @@ if submit_button:
     st.success("Vendor details successfully submitted!")
     #df = conn.read(worksheet="sample", ttl="0.5m")
     #st.write(df)
-tab3.write("Mean of ages")
-tab3.metric(df.Age.mean())
+#tab3.write("Mean of ages")
+tab3.metric("Mean Age",df.Age.mean())
