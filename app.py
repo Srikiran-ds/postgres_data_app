@@ -28,9 +28,10 @@ if submit_button:
     updated_df = pd.concat([df, new_data], ignore_index=True)
 
     # Update Google Sheets with the new vendor data
-tab3.write("Mean of ages")
-m=conn.query(
+
     conn.update(worksheet="sample", data=updated_df)
     st.success("Vendor details successfully submitted!")
     #df = conn.read(worksheet="sample", ttl="0.5m")
     #st.write(df)
+tab3.write("Mean of ages")
+#m=conn.query(
