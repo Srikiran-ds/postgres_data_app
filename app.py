@@ -10,7 +10,7 @@ st.write(df)
 # Add the new vendor data to the existing data
 name = st.text_input(label="Name")
 age = st.text_input(label="age")
-submit_button = st.form_submit_button(label="Submit Details")
+submit_button = st.button(label="Submit Details")
 if submit_button:
     new_data = pd.DataFrame(
                 [
