@@ -34,4 +34,4 @@ if submit_button:
     #df = conn.read(worksheet="sample", ttl="0.5m")
     #st.write(df)
 tab3.write("Mean of ages")
-m=conn.query(
+#m=conn.query(
