@@ -18,7 +18,7 @@ if submit_button:
                         "Name": name,
                         "Age": age,
                     }
-                ]  
+                ]  )
 updated_df = pd.concat([df, new_data], ignore_index=True)
 
 # Update Google Sheets with the new vendor data
