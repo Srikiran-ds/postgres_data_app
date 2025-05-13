@@ -7,3 +7,19 @@ st.write("connection success or what")
 
 df = conn.read(worksheet="sample", ttl="10m")
 st.write(df)
+# Add the new vendor data to the existing data
+name = st.text_input(label="Name")
+age = st.text_input(label="age")
+submit_button = st.form_submit_button(label="Submit Details")
+if submit_button:
+    new_data = pd.DataFrame(
+                [
+                    {
+                        "Name": name,
+                        "Age": age,
+                    }
+                ]  
+updated_df = pd.concat([df, new_data], ignore_index=True)
+
+# Update Google Sheets with the new vendor data
+conn.update(worksheet="sample", data=updated_df)
