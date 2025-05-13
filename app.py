@@ -5,5 +5,5 @@ from streamlit_gsheets import GSheetsConnection
 conn = st.connection("gsheets", type=GSheetsConnection)
 st.write("connection success")
 
-df = conn.read(sheet="Expenses", ttl="10m")
+df = conn.read(sheet="sample", ttl="10m")
 st.write(df)
