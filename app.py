@@ -31,7 +31,9 @@ if submit_button:
 
     conn.update(worksheet="sample", data=updated_df)
     st.success("Vendor details successfully submitted!")
+    df=updated_df
     #df = conn.read(worksheet="sample", ttl="0.5m")
     #st.write(df)
 #tab3.write("Mean of ages")
 tab3.metric("Mean Age",df.Age.mean())
+tab3.metric("#Entries",df.shape[0])
